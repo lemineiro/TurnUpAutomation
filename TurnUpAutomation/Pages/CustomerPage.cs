@@ -145,12 +145,45 @@ namespace TurnUpAutomation.Pages
 
         public void DeleteCustomerRecord(IWebDriver driver)
         {
+            //Go to the last page
+            Thread.Sleep(5000);
 
+            IWebElement goToTheLastPageButton = driver.FindElement(By.XPath("//a[@title='Go to the last page']"));
+            goToTheLastPageButton.Click();
+
+            Thread.Sleep(5000);
+
+            IWebElement findEditedRecord = driver.FindElement(By.XPath("//*[@id=\"clientsGrid\"]/div[2]/table/tbody/tr[last()]/td[2]"));
+
+            if (findEditedRecord.Text == "Jack")
+            {
+                IWebElement deleteButton = driver.FindElement(By.XPath("//*[@id=\"clientsGrid\"]/div[2]/table/tbody/tr[last()]/td[4]/a[2]"));
+                deleteButton.Click();
+                Thread.Sleep(2000);
+
+                driver.SwitchTo().Alert().Accept();
+            }
+            else
+            {
+                Assert.Fail("Record to be deleted has been found. Record not deleted");
+            }
+
+            driver.Navigate().Refresh();
+            Thread.Sleep(2000);
         }
 
         public void DeleteCustomerRecordAssertion(IWebDriver driver)
         {
+            Thread.Sleep(5000);
 
+            IWebElement goToTheLastPageButton = driver.FindElement(By.XPath("//a[@title='Go to the last page']"));
+            goToTheLastPageButton.Click();
+
+            Thread.Sleep(5000);
+
+            IWebElement editedCode = driver.FindElement(By.XPath("//*[@id=\"clientsGrid\"]/div[2]/table/tbody/tr[last()]/td[2]"));
+
+            Assert.That(editedCode.Text != "Jack", "Record code and expected code do not match");
         }
     }
 }

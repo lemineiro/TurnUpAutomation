@@ -74,12 +74,12 @@ namespace TurnUpAutomation.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify user is able to create a new Customer Record")]
-        public virtual void VerifyUserIsAbleToCreateANewCustomerRecord()
+        [NUnit.Framework.DescriptionAttribute("A. Verify user is able to create a new Customer Record")]
+        public virtual void A_VerifyUserIsAbleToCreateANewCustomerRecord()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify user is able to create a new Customer Record", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A. Verify user is able to create a new Customer Record", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -117,12 +117,12 @@ testRunner.Then("system should save the new Customer record", ((string)(null)), 
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify user is able to edit an existing Customer Record")]
-        public virtual void VerifyUserIsAbleToEditAnExistingCustomerRecord()
+        [NUnit.Framework.DescriptionAttribute("B. Verify user is able to edit an existing Customer Record")]
+        public virtual void B_VerifyUserIsAbleToEditAnExistingCustomerRecord()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify user is able to edit an existing Customer Record", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("B. Verify user is able to edit an existing Customer Record", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -160,12 +160,12 @@ testRunner.Then("system should save the edited Customer record", ((string)(null)
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify user is able to delete an existing Customer Record")]
-        public virtual void VerifyUserIsAbleToDeleteAnExistingCustomerRecord()
+        [NUnit.Framework.DescriptionAttribute("C. Verify user is able to delete an existing Customer Record")]
+        public virtual void C_VerifyUserIsAbleToDeleteAnExistingCustomerRecord()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify user is able to delete an existing Customer Record", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("C. Verify user is able to delete an existing Customer Record", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 19
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
